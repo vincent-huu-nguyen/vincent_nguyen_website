@@ -39,6 +39,12 @@ export default function Home() {
                             machine learning models, I am excited to contribute to impactful software that blends
                             creativity and functionality.
                         </p>
+                        <br></br>
+                        <p className="text-1xl mb-1 md:mb-3 font-bold">
+                            I am open to new opportunities and collaborations with others who share a love 
+                            for web development, game design, or AI. Feel free to reach out through the contact form 
+                            or connect with me on LinkedIn.
+                        </p>
                     </div>
                 </div>
             </section>
