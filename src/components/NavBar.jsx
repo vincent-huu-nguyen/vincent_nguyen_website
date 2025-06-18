@@ -6,7 +6,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 const NavBar = () => {
     let Links = [
         { name: "HOME", url: "/" },
-        { name: "ABOUT", url: "/about" },
+        //{ name: "ABOUT", url: "/about" },
         { name: "PORTFOLIO", url: "/portfolio" },
         { name: "CONTACT", url: "/contact" },
     ];
