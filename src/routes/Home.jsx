@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar.jsx"
 import Footer from "../components/Footer.jsx"
 import Background from "../components/Background.jsx"
 import Statefarm from "../assets/Statefarm.png"
-import myImage from "../assets/profilePic.jpg"
+import myImage from "../assets/myColoredImage.jpg"
 
 //import "../css/homeStyle.css"
 
@@ -20,7 +20,7 @@ export default function Home() {
                 </div>
                 <Background />
                 <div className="relative inset-0 flex justify-center items-center">
-                    <img src={myImage} alt="..." className="w-64 h-auto rounded-full object-cover -mt-20 border-2 border-black" />
+                    <img src={myImage} alt="..." className="w-64 h-auto rounded-full object-cover -mt-20 border-4 border-black" />
 
                 </div>
                 <div className="relative">
