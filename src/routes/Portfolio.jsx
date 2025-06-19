@@ -8,25 +8,34 @@ import LevelR from "../assets/levelR.png"
 import Statefarm from "../assets/Statefarm.png";
 import Kitchen from "../assets/kitchen.png"
 import Livingroom from "../assets/livingroom.png"
+import PortfolioWebsite from "../assets/portfolioWebsite.jpg"
 
 
 const Portfolio = () => {
     const portfolio = useMemo(() => [
         {
+            img: PortfolioWebsite,
+            title: "Portfolio Website",
+            desc: " A portfolio website to showcase my projects.",
+            live: "https://vincent-nguyen.vercel.app/",
+            hoverClass: "hover:bg-gradient-to-t from-[#7382ad] via-[#f7f7f9] to-[#f9f9f9]",
+            slideshowImages: [PortfolioWebsite],
+        },
+        {
             img: Rhythmix,
             title: "Rhythmix",
             desc: " Rhythm Game created using the Unity Engine.",
             live: "https://salslinger.itch.io/rhythmix",
-            hoverClass: "hover:bg-gradient-to-t from-[#F6CC78] via-[#EC736A] to-[#5C199A] hover:text-white",
-            slideshowImages:[Rhythmix, Songselect, LevelR],
+            hoverClass: "hover:bg-gradient-to-t from-[#F6CC78] via-[#EC736A] to-[#5C199A]",
+            slideshowImages: [Rhythmix, Songselect, LevelR],
         },
         {
             img: Statefarm,
             title: "Statefarm Interactive Hazard Game",
             desc: " An interactive game using the Godot Engine. The game brings awareness to the player about hazards in homes.",
             live: "https://salslinger.itch.io/statefarm-interactive-hazard-game",
-            hoverClass: "hover:bg-gradient-to-r from-white via-red-600 to-[#D33D33]",
-            slideshowImages:[Statefarm, Kitchen, Livingroom],
+            hoverClass: "hover:bg-gradient-to-t from-[#f9f9f9] via-red-600 to-[#D33D33]",
+            slideshowImages: [Statefarm, Kitchen, Livingroom],
         },
     ], []);
 
@@ -56,7 +65,7 @@ const Portfolio = () => {
                             PORTFOLIO
                         </h1>
                     </div>
-                    <div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {portfolio.map((item, index) => (
                             <a
                                 key={index}
@@ -65,37 +74,19 @@ const Portfolio = () => {
                                 rel="noopener noreferrer"
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => {
-                                    setHoveredIndex(null)
+                                    setHoveredIndex(null);
                                     setCurrentImageIndex(0);
                                 }}
                             >
-                                <div className={`mb-12 bg-[#F3F4F6] ${item.hoverClass}`}>
-                                    <div className='flex items-center'>
-                                    {index % 2 === 0 ? (
-                                            <>
-                                                <img
-                                                    src={hoveredIndex === index ? item.slideshowImages[currentImageIndex] : item.img}
-                                                    alt={item.title}
-                                                    className='w-1/2'
-                                                />
-                                                <div className='w-1/2'>
-                                                    <p>{item.title}</p>
-                                                </div>
-                                            </>
-                                        ) : (
-                                            <>
-                                                <div className='w-1/2'>
-                                                    <p>{item.title}</p>
-                                                </div>
-                                                <img
-                                                    src={hoveredIndex === index ? item.slideshowImages[currentImageIndex] : item.img}
-                                                    alt={item.title}
-                                                    className='w-1/2' />
-                                            </>
-                                        )}
+                                <div className={`bg-[#F3F4F6] ${item.hoverClass} p-4 rounded-md shadow-md`}>
+                                    <img
+                                        src={hoveredIndex === index ? item.slideshowImages[currentImageIndex] : item.img}
+                                        alt={item.title}
+                                        className="w-full object-contain rounded-md mb-4 max-h-64"
+                                    />
 
-
-                                    </div>
+                                    <p className="text-lg font-semibold">{item.title}</p>
+                                    <p className="text-sm text-gray-600">{item.desc}</p>
                                 </div>
                             </a>
                         ))}
