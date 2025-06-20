@@ -17,9 +17,9 @@ const NavBar = ({ theme, handleThemeSwitch }) => {
     return (
         <header>
             <div className='shadow-md w-full fixed top-0 left-0 z-20'>
-                <div className='relative md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-                    <div className='flex items-center gap-4 font-[Poppins] font-bold text-2xl text-gray-800'>
-                        <div className="hover:bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 hover:text-transparent hover:bg-clip-text">
+                <div className='relative md:flex items-center justify-between bg-[#0a0a0a] py-4 md:px-10 px-7'>
+                    <div className='flex items-center gap-4 font-[Poppins] font-bold text-2xl text-[#f7f8f8]'>
+                        <div className="bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 text-transparent bg-clip-text">
                             VN
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const NavBar = ({ theme, handleThemeSwitch }) => {
                         {
                             Links.map((link) => (
                                 <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                                    <a href={link.url} className='text-xl text-dark mx-5 inline-block opacity-65 transition-opacity hover:opacity-100 hover:bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 hover:text-transparent hover:bg-clip-text'>{link.name}</a>
+                                    <a href={link.url} className='text-xl text-dark mx-5 inline-block opacity-65 transition-opacity hover:opacity-100 bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 text-transparent bg-clip-text'>{link.name}</a>
                                 </li>
                             ))
                         }

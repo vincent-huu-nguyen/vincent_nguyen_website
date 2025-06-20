@@ -2,7 +2,7 @@
 
 const Background = () => {
     return (
-        <div className="bg-white min-h-50 flex items-center justify-center px-16 -z-10">
+        <div className="min-h-50 flex items-center justify-center px-16 -z-10">
             <div className="relative w-full max-w-lg">
                 <div className="
                     absolute 

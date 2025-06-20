@@ -11,9 +11,9 @@ export default function Home() {
     return (
         <>
             <NavBar />
-            <section className="bg-primary px-5 text-[#181818] pb-40">
+            <section className="bg-primary px-5 text-[#f7f8f8] pb-40">
                 <div className="flex items-center justify-center flex-col text-center">
-                    <h1 className="text-7xl font-bold mb-4 hover:bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 hover:text-transparent hover:bg-clip-text hover:scale-110 duration-200">
+                    <h1 className="text-7xl font-bold mb-4 bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 text-transparent bg-clip-text hover:scale-110 duration-200">
                         VINCENT NGUYEN
                     </h1>
                     <p className="text-2xl font-bold">Software Engineer, Web Developer & Game Designer</p>
