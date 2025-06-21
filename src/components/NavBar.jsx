@@ -28,8 +28,12 @@ const NavBar = ({ theme, handleThemeSwitch }) => {
                         {open ? <FiX /> : <FiMenu />}
                     </div>
 
-                    <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#0a0a0a] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-450 ease-in ${open ? 'top-10 h-screen' : 'top-[-490px] h-0'}`} onClick={() => setOpen(false)}>
-                        {
+                    <ul
+                        className={`md:flex md:items-center md:pb-0 absolute md:static bg-[#0a0a0a] md:z-auto z-[-1] w-full md:w-auto transition-all duration-450 ease-in
+                            ${open ? 'top-0 left-0 h-screen flex flex-col items-center justify-center' : 'top-[-490px] h-0'}
+                        `}
+                        onClick={() => setOpen(false)}
+                    >                        {
                             Links.map((link) => (
                                 <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
                                     <a href={link.url} className='text-xl text-dark mx-5 inline-block opacity-65 transition-opacity hover:opacity-100 bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 text-transparent bg-clip-text'>{link.name}</a>
