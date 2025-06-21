@@ -7,7 +7,7 @@ const Background = () => {
                 <div className="
                     absolute 
                     top-0 
-                    right-4 
+                    left-10 
                     w-72 h-72 
                     bg-purple-700 
                     rounded-full
@@ -20,7 +20,7 @@ const Background = () => {
                 <div className="
                     absolute 
                     top-0 
-                    left-4 
+                    right-10
                     w-72 
                     h-72 
                     bg-green-500 
@@ -35,7 +35,7 @@ const Background = () => {
                 <div className="
                     absolute 
                     top-6
-                    left-20 
+                    left-4 
                     w-72 
                     h-72 
                     bg-indigo-500 

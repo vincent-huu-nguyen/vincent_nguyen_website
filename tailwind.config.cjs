@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        blob: "blob 10s infinite",
+        blob: "blob 9s infinite",
         bubbles: "bubbles 10s linear infinite",
       },
       keyframes: {
@@ -20,7 +20,7 @@ export default {
             transform: "translate(15px, -25px) scale(1.05)",
           },
           "33%": {
-            transform: "translate(30px, -50px) scale(1.1)",
+            transform: "translate(30px, -40px) scale(1.1)",
           },
           "49": {
             transform: "translate(5px, -15px) scale(1)",
@@ -29,7 +29,7 @@ export default {
             transform: "translate(-20px, 20px) scale(0.9)",
           },
           "84%": {
-            transform: "translate(-10px, 10px) scale(0.95)",
+            transform: "translate(-50px, 10px) scale(0.95)",
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
@@ -56,3 +56,4 @@ export default {
   },*/
 plugins: [],
 }
+
