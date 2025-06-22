@@ -38,7 +38,7 @@ const Contact = () => {
             <NavBar />
             <section className="bg-primary px-5 text-[#181818]">
                 <div className="relative flex justify-center items-center mt-5 mb-10 flex-wrap text-left">
-                    <div className="w-5/6 rounded-md bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 p-2 hover:p-1 duration-200">
+                    <div className="w-full rounded-md bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 p-2 hover:p-1 duration-200">
                         <section className="bg-[#0b0b0b] rounded-md">
                             <div className="py-4 lg:py-16 px-4 mx-auto max-w-screen-md">
                                 <h2 className="mb-4 text-4xl tracking-tight font-bold text-center text-[#f7f8f8] dark:text-black hover:bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 hover:text-transparent hover:bg-clip-text hover:scale-110 duration-200">
