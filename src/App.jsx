@@ -52,16 +52,20 @@ function App() {
 
 
 function App() {
+  useEffect(() => {
+    document.title = "Vincent Nguyen"; //Tab title
+  }, []);
+
   return (
     <>
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/portfolio" element={<Portfolio/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-      </Routes>
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </>
   );
 }
