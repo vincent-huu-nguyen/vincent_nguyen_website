@@ -2,9 +2,9 @@ import React, { useState, useEffect, useMemo } from "react";
 import NavBar from "../components/NavBar.jsx";
 import Footer from "../components/Footer.jsx";
 import rhythmixLogo from "../assets/rhythmixLogo.png"
-import Rhythmix from "../assets/Rhythmix.png";
-import Songselect from "../assets/songselect.png";
-import LevelR from "../assets/levelR.png"
+import rhythmix1 from "../assets/rhythmix1.gif";
+import rhythmix2 from "../assets/rhythmix2.gif";
+import rhythmix3 from "../assets/rhythmix3.gif"
 import statefarmLogo from "../assets/statefarmLogo.png"
 import Statefarm from "../assets/Statefarm.png";
 import Kitchen from "../assets/kitchen.png"
@@ -17,6 +17,12 @@ import battleRPB2 from "../assets/battleRPB2.gif"
 import musicChanges from "../assets/musicChanges.png"
 import musicJourney from "../assets/musicJourney.png"
 import musicProm from "../assets/musicProm.png"
+import snatched from "../assets/snatched.png"
+import snatched1 from "../assets/snatched1.gif"
+import snatched2 from "../assets/snatched2.gif"
+import snatched3 from "../assets/snatched3.gif"
+import snatched4 from "../assets/snatched4.gif"
+import snatched5 from "../assets/snatched5.gif"
 
 
 const Portfolio = () => {
@@ -33,11 +39,20 @@ const Portfolio = () => {
         {
             img: redPandaBash,
             title: "Red Panda Bash",
-            desc: " A platformer arcade-esque game using the Godot Engine. Play as a skilled red panda, using your agility and precision to dodge and throw bamboos with pinpoint accuracy. Challenge other red pandas in fast-paced, action-packed duels. Every match is a test of your speed and strategy.",
+            desc: " A platformer arcade-esque game built in the Godot Engine. Play as a skilled red panda, using your agility and precision to dodge and throw bamboos with pinpoint accuracy. Challenge other red pandas in fast-paced, action-packed duels. Every match is a test of your speed and strategy.",
             live: "https://cents808.itch.io/red-panda-bash",
             git: "https://github.com/vincent-huu-nguyen/platform_game",
             hoverClass: "hover:bg-gradient-to-t from-[#7382ad] via-[#f7f7f9] to-[#f9f9f9]",
             slideshowImages: [battleRPB, battleRPB2],
+        },
+        {
+            img: snatched,
+            title: "Snatched",
+            desc: ' An action RPG horror game built in the Unity Engine. Play as a detective searching for his missing daughter in a forgotten town and an eerie orphanage, The Happy Place. Battle twisted enemies and uncover the dark truth buried in its past.',
+            live: "https://salslinger.itch.io/snatched",
+            git: "https://github.com/Salslinger/CSE-4304-Team-Project",
+            hoverClass: "hover:bg-gradient-to-t from-[#7382ad] via-[#f7f7f9] to-[#f9f9f9]",
+            slideshowImages: [snatched1, snatched2, snatched3, snatched4, snatched5],
         },
         {
             img: PortfolioWebsite,
@@ -60,11 +75,11 @@ const Portfolio = () => {
         {
             img: rhythmixLogo,
             title: "Rhythmix",
-            desc: " Rhythm Game created using the Unity Engine. The player scores by tapping keys on beat with the music.",
+            desc: " A rhythm game built in Unity where players tap keys in sync with the music to score points. Features multiple difficulty levels to test your timing, precision, and rhythm.",
             live: "https://salslinger.itch.io/rhythmix",
             git: "https://github.com/Salslinger/Rhythmix",
             hoverClass: "hover:bg-gradient-to-t from-[#F6CC78] via-[#EC736A] to-[#5C199A]",
-            slideshowImages: [Rhythmix, Songselect, LevelR],
+            slideshowImages: [rhythmix1, rhythmix2, rhythmix3],
         },
         {
             img: statefarmLogo,
@@ -117,7 +132,7 @@ const Portfolio = () => {
                                 }}
                             >
                                 <div className="rounded-md bg-gradient-to-r from-green-500 via-indigo-500 to-purple-500 p-1 hover:p-0.5 duration-200">
-                                    <div className={`bg-[#0a0a0a] p-4 rounded-md shadow-md h-[460px] flex flex-col justify-between`}>
+                                    <div className={`bg-[#0a0a0a] p-4 rounded-md shadow-md h-[500px] flex flex-col justify-between`}>
                                         <img
                                             src={hoveredIndex === index ? item.slideshowImages[currentImageIndex] : item.img}
                                             alt={item.title}
