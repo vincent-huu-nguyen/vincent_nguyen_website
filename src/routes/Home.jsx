@@ -4,7 +4,7 @@ import Footer from "../components/Footer.jsx"
 import Background from "../components/Background.jsx"
 //import Statefarm from "../assets/Statefarm.png"
 import myImage from "../assets/myColoredImage.jpg"
-import myResume from "../assets/Vincent_Nguyen_Resume.pdf"
+import myResume from "../assets/Vincent_Nguyen_ResumeW.pdf"
 
 //import "../css/homeStyle.css"
 

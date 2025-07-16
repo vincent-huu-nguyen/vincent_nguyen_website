@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar.jsx";
 import Footer from "../components/Footer.jsx";
 import Button from "../components/Button.jsx";
 import Background from "../components/Background.jsx";
-import myResume from "../assets/Vincent_Nguyen_Resume.pdf"
+import myResume from "../assets/Vincent_Nguyen_ResumeW.pdf"
 
 
 const Contact = () => {
