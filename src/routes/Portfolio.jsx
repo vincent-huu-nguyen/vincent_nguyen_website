@@ -23,10 +23,22 @@ import snatched2 from "../assets/snatched2.gif"
 import snatched3 from "../assets/snatched3.gif"
 import snatched4 from "../assets/snatched4.gif"
 import snatched5 from "../assets/snatched5.gif"
+import portfolioThreeJS from "../assets/portfolioThreeJS.gif"
+import portfolioThreeJS1 from "../assets/portfolioThreeJS1.gif"
+import portfolioThreeJS2 from "../assets/portfolioThreeJS2.gif"
+import portfolioThreeJS3 from "../assets/portfolioThreeJS3.gif"
 
 
 const Portfolio = () => {
     const portfolio = useMemo(() => [
+        {
+            img: portfolioThreeJS,
+            title: "Interactive 3D Portfolio Website",
+            desc: "A 3D portfolio website using React, Three.js, and modern front-end technologies, blending web application interactivity with a clean UI.",
+            live: "https://vincentnguyen.vercel.app/",
+            git: "https://github.com/vincent-huu-nguyen/portfolio_threejs",
+            slideshowImages: [portfolioThreeJS1, portfolioThreeJS2, portfolioThreeJS3, portfolioThreeJS],
+        },
         {
             img: musicChanges,
             title: "Cents Music Player",
